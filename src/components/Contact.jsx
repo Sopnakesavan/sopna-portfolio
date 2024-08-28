@@ -49,9 +49,9 @@ const Contact = () => {
 				EMAIL_JS_TEMPLATE_ID,
 				{
 					from_name: username,
-					to_name: "Nithin Manda",
+					to_name: "Sopna Kesavan",
 					reply_to: user_email,
-					to_email: "goudnithin77@gmail.com",
+					to_email: "sopna27494@gmail.com",
 					message: user_message,
 				},
 				EMAIL_JS_PUBLIC_KEY
@@ -91,48 +91,48 @@ const Contact = () => {
 						className='mt-12 flex flex-col gap-8'
 					>
 						<label className='flex flex-col'>
-							<span className=' font-medium mb-4'>Your Name</span>
+							<span className=' font-medium mb-4'>Name</span>
 							<input
 								type='text'
 								name='name'
-								value={form.name}
+								value='Sopna Kesavan'
 								onChange={handleChange}
-								placeholder="Enter your name"
+								// placeholder="Enter your name"
 								className='py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900'
 								required
 							/>
 						</label>
 						<label className='flex flex-col'>
-							<span className=' font-medium mb-4'>Your email</span>
+							<span className=' font-medium mb-4'>Email</span>
 							<input
 								type='email'
 								name='email'
-								value={form.email}
-								onChange={handleChange}
-								placeholder="Ex:abc@gmail.com"
+								value='sopna27494@gmail.com'
+								// onChange={handleChange}
+								// placeholder="Ex:abc@gmail.com"
 								className='py-4 px-6 rounded-lg  font-medium bg-gray-900'
 								required
 							/>
 						</label>
 						<label className='flex flex-col'>
-							<span className='font-medium mb-4'>Your Message</span>
+							<span className='font-medium mb-4'> Mobile</span>
 							<textarea
-								rows={7}
-								name='message'
-								value={form.message}
-								onChange={handleChange}
-								placeholder='Do you have anything to say?'
+								// rows={7}
+								name='mobile'
+								value='6380975740'
+								// onChange={handleChange}
+								// placeholder='Do you have anything to say?'
 								className='py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900'
 								required
 							/>
 						</label>
 
-						<button
+						{/* <button
 							type='submit'
 							className='pt-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900'
 						>
 							{loading ? "Sending..." : "Send"}
-						</button>
+						</button> */}
 					</form>
 				</div>
 				<ToastContainer />
